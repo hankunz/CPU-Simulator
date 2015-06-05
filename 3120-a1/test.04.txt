@@ -1,0 +1,3 @@
+This test include 5 instructions: std,cld,load,push,pop
+At the beginning: r4=4, r5=0
+At the end (result): r4=4, r5=4

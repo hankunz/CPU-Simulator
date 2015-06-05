@@ -1,0 +1,4 @@
+This test include 5 instructions: std,load,cmp,br,equ
+Store 3 into r3, 4 into r4. Compare them and jump to different label.
+
+Result: r1=1,r3=3,r4=4,r5=3

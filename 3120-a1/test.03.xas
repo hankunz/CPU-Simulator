@@ -1,0 +1,11 @@
+std
+loadi 7,r7
+loadi 8,r8
+test r7,r8
+cmp r8,r7
+equ r7,r8
+br j1
+
+j1:
+loadi 9,r1
+

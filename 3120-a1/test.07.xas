@@ -1,0 +1,5 @@
+std
+
+loadi 5,r5
+storb r5,r0
+loadb r0,r1

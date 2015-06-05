@@ -1,0 +1,9 @@
+std
+
+loadi 3,r5
+load r5,r0
+stor r5,r1
+load r1,r2
+
+loadb r2,r3
+storb r3,r4

@@ -1,0 +1,4 @@
+This test include 6 instructions: std,loadi,load,stor,loadb,storb
+load 3 into r5, load memory pointed by r5 into r0, store r5 into the memory address pointed by r1, then load r1 to the memory pointed by r2. After that, load byte into r3 from memory pointed by r2, store byte from r3 to memory at address in r4.
+
+At the end (result): r0=MEMORY20480,r2=3,r3=memory80,r5=3

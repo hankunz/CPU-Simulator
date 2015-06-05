@@ -1,0 +1,4 @@
+This test include 4 instructions: std,loadi,call,jumpr
+Stores the address of label j2 to r3, and then call the address stored in r3, j2 is executed. In j2, store the address of label j1 to r2 and then jump to address in r2, j1 is executed. In j1, store 4 into r4.
+
+Result: r4 stores 4

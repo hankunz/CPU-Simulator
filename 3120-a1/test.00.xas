@@ -1,0 +1,9 @@
+std
+loadi 3,r0
+loadi 7,r1
+add r0,r1    #3 10
+mul r1,r0    #30 10
+div r1,r0	#3 10
+sub r0,r1	#3 7
+neg r0			#-3
+

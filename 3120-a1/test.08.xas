@@ -1,0 +1,23 @@
+std
+loadi 3,r3
+loadi 4,r4
+cmp r3,r4
+br j1
+
+cmp r4,r3
+br j1
+
+j1:
+loadi 3,r5
+equ r3,r5
+br j2
+
+j2:
+loadi 1,r1
+equ r3,r5
+br j3
+loadi 5,r0
+
+j3:
+loadi 1,r0
+loadi 0,r0

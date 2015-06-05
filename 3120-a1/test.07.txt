@@ -1,0 +1,4 @@
+This test include 4 instructions: std,load,storb,loadb
+Store a value 5 into r5, and pass the value from r0 to r1.
+
+result: r1=5,r5=5

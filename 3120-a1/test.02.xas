@@ -1,0 +1,10 @@
+std
+loadi 4,r4
+loadi 5,r5
+not r4
+not r5
+shl r5,r4
+shr r4,r5
+inc r5
+dec r5
+neg r4

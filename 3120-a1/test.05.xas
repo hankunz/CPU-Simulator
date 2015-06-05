@@ -1,0 +1,10 @@
+std
+loadi j2,r3
+callr r3
+
+j1:
+loadi 4,r4
+
+j2:
+loadi j1,r2
+jmpr r2

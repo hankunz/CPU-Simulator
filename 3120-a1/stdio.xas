@@ -1,0 +1,56 @@
+.glob puts
+.glob memcpy
+
+puts:
+  push  r0             # save registers to be used
+  push  r1
+  mov   r15, r1        # save stack pointer
+  loadi 6, r0          # add 3 words to access params
+  add   r0, r1 
+  load  r1, r0         # load param into r0
+
+loop:                  # loop through string
+  loadb r0, r1         # load byte
+  test  r1, r1         # check if not nil byte
+  br    output         # if byte is not nil, branch to output
+  jr    done           # else branch to done
+output:
+  out   r1             # output byte
+  inc   r0             # increment pointer
+  jr    loop           # loop
+
+done:
+  loadi 0xa, r1        # output newline
+  out   r1             #
+  pop   r1             # restore r1
+  pop   r0             # restore r0
+  pop   r2
+  pop   r3
+  pop   r4
+  pop   r5
+  ret                  # return
+
+memcpy:
+  push r4               #push values on to stack
+  push r3
+  push r0
+  push r1
+  push r2
+  loadi 0,r4              #counter
+  jr memcpyLoop
+
+
+memcpyLoop:
+  equ r3,r4           #check if the counter reaches the length
+  br memcpyEnd
+  loadb r5,r2         #cpy r5 to r0 byte by byte
+  storb r2,r0
+  inc r5              #increse the pointer and the counter
+  inc r0
+  inc r4
+  jr memcpyLoop
+
+
+memcpyEnd:
+  sub r3,r0       #make pointer points the beginning of the string
+  jr loop         #print the result

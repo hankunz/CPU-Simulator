@@ -1,0 +1,15 @@
+std
+loadi 2,r2
+jmp j1
+
+
+j1:
+loadi 1,r1
+call j3
+
+
+j2:
+loadi 3,r3
+
+j3:
+loadi 4,r4

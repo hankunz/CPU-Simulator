@@ -1,0 +1,4 @@
+This test include 4 instructions: std,load,jump,call
+Store value 2 into r2, jump to j1. Store 1 into r1 and call label j3. Store 4 into r4. j2 is skipped.
+
+Result: r1=1,r2=2,r4=4,r3=0

@@ -1,0 +1,6 @@
+std
+cld
+std
+loadi 4,r4
+push r4
+pop r5

@@ -1,0 +1,22 @@
+.glob main
+.glob memcpy
+
+
+
+main:
+
+loadi tString,r5        #store the source string to the stack
+push r5
+loadi 14,r3         #store the length of string you want to copy to the stack
+push r3
+call memcpy     #call memcpy function
+pop r5          #restore
+pop r3
+
+
+
+
+
+
+tString:
+.literal "It worked!!!Thank God!"
